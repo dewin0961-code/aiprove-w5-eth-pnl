@@ -1,0 +1,21 @@
+== strategy run (deterministic: positions.csv md5 before/after re-run)
+293288e0148b1fd313a0702166e3cb5b  positions.csv
+wrote positions.csv: 1440 rows, long 380, short 362, flat 698
+293288e0148b1fd313a0702166e3cb5b  positions.csv
+
+== backtest (default fee 0.10% + slippage 0.02%)
+fee=0.10% slippage=0.02% -> net PnL=138.38 USDT  gross=155.06  costs=16.68  max DD=21.62  fills=6
+
+== fee sensitivity
+fee=0.00% slippage=0.02% -> net PnL=152.28 USDT  gross=155.06  costs=2.78  max DD=19.22  fills=6
+fee=0.05% slippage=0.02% -> net PnL=145.33 USDT  gross=155.06  costs=9.73  max DD=19.70  fills=6
+fee=0.10% slippage=0.02% -> net PnL=138.38 USDT  gross=155.06  costs=16.68  max DD=21.62  fills=6
+fee=0.15% slippage=0.02% -> net PnL=131.43 USDT  gross=155.06  costs=23.63  max DD=23.55  fills=6
+fee=0.20% slippage=0.02% -> net PnL=124.48 USDT  gross=155.06  costs=30.58  max DD=25.47  fills=6
+fee=0.30% slippage=0.02% -> net PnL=110.57 USDT  gross=155.06  costs=44.49  max DD=29.32  fills=6
+
+== dataset identity
+9f8a16c669100d333b3c11c2bd6d503e  bars.csv
+ 1441 positions.csv
+ 1441 bars.csv
+ 2882 total
